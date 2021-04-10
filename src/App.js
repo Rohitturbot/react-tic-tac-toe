@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import Game from "./component/Game";
+import { Col, Container, Row } from "react-bootstrap";
+import usePageTitle from "./hooks/usePageTitle";
 
-function App() {
+const App = () => {
+  usePageTitle("Tic Tac Toe - Game");
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container fluid className="app-container">
+      <Row className="mt-4">
+        <Col>
+          <Game />
+        </Col>
+      </Row>
+    </Container>
   );
-}
+};
 
 export default App;
