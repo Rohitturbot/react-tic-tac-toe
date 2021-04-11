@@ -3,9 +3,9 @@ import { Button } from "react-bootstrap";
 
 const Square = ({ value, onClick }) => (
   <Button
-    variant="outline-primary"
+    variant="outline-warning"
     onClick={onClick}
-    className="border border-primary rounded-0 square"
+    className="border border-warning rounded-0 square"
   >
     <p className="mb-0">{value}</p>
   </Button>
